@@ -1,0 +1,117 @@
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 93px;
+  padding-bottom: 33px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 109px;
+    padding-bottom: 51px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+.hero-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.hero-text-wrapper {
+  @include media(desktop) {
+    max-width: 604px;
+  }
+}
+
+.hero-main-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3125;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 64px;
+    line-height: 1.15625;
+  }
+}
+
+.hero-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+  }
+}
+
+.hero-link {
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 2px 6px 0 rgba(255, 255, 255, 0.25);
+  background: rgba(69, 218, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 11px 27px;
+  width: 100%;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:active,
+  &:focus {
+    background: rgba(69, 218, 255, 0.24);
+  }
+
+  @include media(desktop) {
+    max-width: max-content;
+    margin: 0;
+
+    &:hover {
+      background: rgba(69, 218, 255, 0.24);
+    }
+  }
+}
