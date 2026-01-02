@@ -1,11 +1,4 @@
-.hero-section {
-  @include media(desktop) {
-  }
-}
-
-.hero-bg-wrapper {
-  padding-top: 93px;
-  padding-bottom: 33px;
+.hero-about-bg-wrapper {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -15,10 +8,23 @@
   background-size: cover;
 
   @include media(desktop) {
-    padding-top: 109px;
-    padding-bottom: 51px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 472px;
+  padding-bottom: 24px;
+
+  @include media(desktop) {
+    padding-top: 218px;
+    padding-bottom: 150px;
   }
 }
 
@@ -27,91 +33,118 @@
   }
 }
 
-.hero-content-wrapper {
-  @include media(desktop) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-}
-
-.hero-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+.hero-title-wrapper {
+  max-width: 343px;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    margin: 0;
-  }
-}
-
-.hero-text-wrapper {
-  @include media(desktop) {
-    max-width: 604px;
+    max-width: 533px;
+    margin-bottom: 32px;
   }
 }
 
 .hero-main-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 1.3125;
+  font-size: 92px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 16px;
+  background: linear-gradient(270deg, #3255e5 0%, #36def2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @include media(desktop) {
-    font-size: 64px;
-    line-height: 1.15625;
+    font-size: 132px;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  background: linear-gradient(90deg, #8754ef 0%, #e962db 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    font-size: 56px;
   }
 }
 
 .hero-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 40px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #a4a3c3;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: 416px;
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #1dc9e0 0%, #8455f1 50%, #e862dc 100%);
+  border-radius: 16px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #515257;
+  }
+
+  @include media(desktop) {
+    max-width: 196px;
+    margin: 0;
+  }
+}
+
+.hero-btn-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.her-btn-top-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 4px;
 
   @include media(desktop) {
   }
 }
 
-.hero-link {
-  backdrop-filter: blur(14px);
-  box-shadow: inset 0 2px 6px 0 rgba(255, 255, 255, 0.25);
-  background: rgba(69, 218, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 11px 27px;
-  width: 100%;
-  max-width: 343px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+.her-btn-bottom-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-
-  &:active,
-  &:focus {
-    background: rgba(69, 218, 255, 0.24);
-  }
 
   @include media(desktop) {
-    max-width: max-content;
-    margin: 0;
-
-    &:hover {
-      background: rgba(69, 218, 255, 0.24);
-    }
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  background: #080b0e;
+  background: #0f1137;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -9,40 +9,15 @@
 
 .footer-container {
   @include media(desktop) {
-    padding: 0 96px;
-  }
-}
-
-.footer-top-wrapper {
-  margin-bottom: 32px;
-
-  @include media(desktop) {
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.footer-email-link {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #00fbf4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    margin-bottom: 0;
+    padding: 0 88px;
   }
 }
 
 .footer-nav {
+  margin-bottom: 32px;
+
   @include media(desktop) {
+    margin-bottom: 60px;
   }
 }
 
@@ -55,20 +30,22 @@
   @include media(desktop) {
     flex-direction: row;
     justify-content: end;
-    gap: 74px;
+    gap: 60px;
   }
 }
 
 .footer-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  color: #f0efff;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
+    font-size: 20px;
   }
 
   &:hover,
@@ -77,13 +54,15 @@
 }
 
 .footer-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: #a4a3c3;
 
   @include media(desktop) {
+    font-size: 20px;
   }
 }
