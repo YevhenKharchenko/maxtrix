@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxtrix</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maxtrix.online" />
+    <link rel="icon" type="image/png" href="/maxtrix/favicon.png" />
+    
+    <script type="module" crossorigin src="/maxtrix/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/maxtrix/assets/header-616768c6.js">
+    <link rel="stylesheet" href="/maxtrix/assets/header-27bd30cd.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="hero-title-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="30"
+          height="29"
+        /><span class="header-logo-span">Maxtrix</span></a
+      >
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">How It Works</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#sound">Sound Layers</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/maxtrix/assets/sprite-41346387.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/maxtrix/assets/sprite-41346387.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gameplay"
+          >How It Works</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#sound">Sound Layers</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#faq">FAQ</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <div class="hero-about-bg-wrapper">
+        <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-title-wrapper">
+          <h1 class="hero-main-title">Music</h1>
+          <p class="hero-subtitle">Is Everywhere</p>
+        </div>
+        <p class="hero-text">
+          Take stuff like footsteps, wind sounds, whatever noise is around you -
+          and make it rhythmic
+        </p>
+        <a class="hero-btn" href="#">
+          <svg class="playstore-icon" width="26" height="29">
+            <use href="/maxtrix/assets/sprite-41346387.svg#icon-playstore"></use>
+          </svg>
+          <div class="hero-btn-text-wrapper">
+            <p class="hero-btn-top-text">GET IT ON</p>
+            <p class="hero-btn-bottom-text">Google Play</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section gameplay-section" id="gameplay">
+  <div class="container gameplay-container">
+    <h2 class="section-title gameplay-title">Gameplay Overview</h2>
+    <p class="gameplay-text">
+      <span class="gameplay-text-span">You basically take</span> random sounds
+      that aren't music and turn them into something
+      <span class="gameplay-text-span">
+        that aren't music and turn them into something that actually sounds
+        good. Sounds are collected and unlocked through levels. Each level
+        introduces a new sound set
+      </span>
+    </p>
+    <ul class="gameplay-list">
+      <li class="gameplay-list-item">
+        <picture>
+          <source
+            srcset="/maxtrix/assets/gameplay-img1-mob-de9d37f4.png "
+            media="(min-width: 1440px)"
+            width="187"
+            height="220" />
+          <source
+            srcset="/maxtrix/assets/gameplay-img1-mob-de9d37f4.png "
+            width="343"
+            height="220" />
+          <img
+            class="gameplay-img"
+            src="/maxtrix/assets/gameplay-img1-mob-de9d37f4.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="220"
+            loading="lazy"
+        /></picture>
+      </li>
+      <li class="gameplay-list-item">
+        <picture>
+          <source
+            srcset="/maxtrix/assets/gameplay-img2-mob-0e75b42f.png "
+            media="(min-width: 1440px)"
+            width="187"
+            height="220" />
+          <source
+            srcset="/maxtrix/assets/gameplay-img2-mob-0e75b42f.png "
+            width="343"
+            height="220" />
+          <img
+            class="gameplay-img"
+            src="/maxtrix/assets/gameplay-img2-mob-0e75b42f.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="220"
+            loading="lazy"
+        /></picture>
+      </li>
+      <li class="gameplay-list-item">
+        <picture>
+          <source
+            srcset="/maxtrix/assets/gameplay-img3-mob-24b71f0d.png "
+            media="(min-width: 1440px)"
+            width="187"
+            height="220" />
+          <source
+            srcset="/maxtrix/assets/gameplay-img3-mob-24b71f0d.png "
+            width="343"
+            height="220" />
+          <img
+            class="gameplay-img"
+            src="/maxtrix/assets/gameplay-img3-mob-24b71f0d.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="220"
+            loading="lazy"
+        /></picture>
+      </li>
+      <li class="gameplay-list-item">
+        <picture>
+          <source
+            srcset="/maxtrix/assets/gameplay-img4-mob-805a63c9.png "
+            media="(min-width: 1440px)"
+            width="187"
+            height="220" />
+          <source
+            srcset="/maxtrix/assets/gameplay-img4-mob-805a63c9.png "
+            width="343"
+            height="220" />
+          <img
+            class="gameplay-img"
+            src="/maxtrix/assets/gameplay-img4-mob-805a63c9.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="220"
+            loading="lazy"
+        /></picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </div>
+      <section class="section works-section" id="works">
+  <div class="container works-container">
+    <div class="works-content-wrapper">
+      <div class="works-text-wrapper">
+        <h2 class="section-title works-title">Interaction & Controls</h2>
+        <ul class="works-list">
+          <li class="works-list-item">
+            <p class="works-list-item-text">Tap to add or remove a sound</p>
+          </li>
+          <li class="works-list-item">
+            <p class="works-list-item-text">
+              Sliders or knobs for volume and rhythm
+            </p>
+          </li>
+          <li class="works-list-item">
+            <p class="works-list-item-text">
+              It's pretty easy to figure out just drag things around and see
+              what happens
+            </p>
+          </li>
+          <li class="works-list-item">
+            <p class="works-list-item-text">
+              You hear changes instantly as you tweak stuff
+            </p>
+          </li>
+        </ul>
+      </div>
+      <picture>
+        <source
+          srcset="/maxtrix/assets/works-img-desk-d2b5a560.png "
+          media="(min-width: 1440px)"
+          width="482"
+          height="363" />
+        <source
+          srcset="/maxtrix/assets/works-img-mob-82d69303.png "
+          width="311"
+          height="363" />
+        <img
+          class="works-img"
+          src="/maxtrix/assets/works-img-mob-82d69303.png"
+          alt="Screenshot of the game"
+          width="311"
+          height="363"
+          loading="lazy"
+      /></picture>
+    </div>
+  </div>
+</section>
+
+      <div class="sound-faq-bg-wrapper">
+        <section class="section sound-section" id="sound">
+  <div class="sound-bg-wrapper">
+    <div class="container sound-container">
+      <div class="section-title-wrapper about-title-wrapper">
+        <h2 class="section-title about-title">Compose the Ordinary</h2>
+      </div>
+      <p class="sound-text">
+        Turn everyday noise into rhythm.<br />
+        <span class="sound-text-span"
+          >Experiment with sounds, layer them, and build your own
+          compositions</span
+        >
+        — no musical skills needed.
+      </p>
+      <a class="sound-btn" href="#">
+        <svg class="playstore-icon" width="26" height="29">
+          <use href="/maxtrix/assets/sprite-41346387.svg#icon-playstore"></use>
+        </svg>
+        <div class="sound-btn-text-wrapper">
+          <p class="sound-btn-top-text">GET IT ON</p>
+          <p class="sound-btn-bottom-text">Google Play</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section class="section faq-section" id="faq">
+  <div class="container faq-container">
+    <h2 class="section-title faq-title">FAQ</h2>
+    <ul class="faq-list">
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Is Maxtrix a music game?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/maxtrix/assets/sprite-41346387.svg#icon-caret"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Nah, it's not really about music theory or anything like that - just
+          making cool rhythmic stuff.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Do I need musical experience?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/maxtrix/assets/sprite-41346387.svg#icon-caret"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          No. We built it so you can just jump in and start experimenting
+          without needing to know anything.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">What kinds of sounds are used?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/maxtrix/assets/sprite-41346387.svg#icon-caret"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Everyday noises such as footsteps, wind, rain, engines, doors, paper,
+          dishes, and city ambience.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text"
+            >Is there a limit to how many sounds I can use?</span
+          >
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/maxtrix/assets/sprite-41346387.svg#icon-caret"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Yes. Up to six sounds can be active at the same time.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Are there goals or scores?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/maxtrix/assets/sprite-41346387.svg#icon-caret"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          No. It's more about making cool sounds than beating anyone.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Can I save or share my creations?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/maxtrix/assets/sprite-41346387.svg#icon-caret"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Sharing features depend on the platform and may be added later.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </div>
+      <section class="section contact-section" id="contact">
+  <div class="contact-bg-wrapper">
+    <div class="container contact-container">
+      <div class="contact-content-wrapper">
+        <h2 class="section-title contact-title">Contact</h2>
+        <a href="mailto:info@maxtrix.online" class="contact-item-link"
+          >info@maxtrix.online
+        </a>
+
+        <img
+          class="contact-img"
+          src="/maxtrix/assets/contact-img-597b1427.png"
+          alt="Screenshot of the game"
+          width="298"
+          height="298"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2025 — All rights reserved. maxtrix.online</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
