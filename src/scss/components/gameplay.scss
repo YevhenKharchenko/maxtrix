@@ -1,0 +1,63 @@
+.gameplay-section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #a4a3c3;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 842px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
+  }
+}
+
+.gameplay-text-span {
+  color: #f0efff;
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.gameplay-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-img {
+  @include media(desktop) {
+  }
+}

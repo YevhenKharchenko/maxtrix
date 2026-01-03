@@ -114,7 +114,6 @@
   &:hover,
   &:focus,
   &:active {
-    background: #515257;
   }
 
   @include media(desktop) {
@@ -128,7 +127,7 @@
   }
 }
 
-.her-btn-top-text {
+.hero-btn-top-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -139,7 +138,7 @@
   }
 }
 
-.her-btn-bottom-text {
+.hero-btn-bottom-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
